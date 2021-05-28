@@ -1,0 +1,202 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    background-color: #080808;
+}
+.head>img{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 70px;
+    height:70px;
+    padding: 10px;
+}
+.menu form{
+    position: relative;
+    left:450px;
+    top:20px;
+}
+.head{
+    width: 100vw;
+    height:100px;
+    box-shadow: 4px 2px 8px #080808;
+    position: fixed;
+    z-index: 999;
+    top:0;
+    display: block;
+    background-color: #1a1a1a;
+}
+ #txt1{
+    width: 400px;
+    height: 41px; 
+    font-size: 20px;
+    font-family: sans-serif;
+
+    
+    padding: 0px 10px;
+    border-radius: 6px 0 0 6px;
+    outline: 0;
+    border:2px solid rgba(34, 33, 33, 0.9) ;
+   background-color: rgb(255, 255, 255);
+ 
+} 
+#btn1{
+
+width: 100px;
+height:42px;
+border-radius: 0 6px 6px 0;
+border:0;
+font-family: sans-serif;
+font-size: 20px;
+background-color: rgb(235, 59, 82);
+color: #080808;
+ transition: 0.6s ease all;
+}
+#btn1:hover{
+    background-color: #080808;
+    color:rgb(235, 59, 82);
+    border:2px solid rgb(235, 59, 82) ;
+}
+.header ul{
+    position: relative;
+    left:70%;
+    display: flex;
+    
+}
+.header ul li{
+    list-style: none;
+}
+.header ul a{
+    padding: 30px;
+    font-size: 25px;
+    text-decoration: none;
+    color:rgb(235, 59, 82) ;
+position: relative;
+}
+.header ul a::after{
+    content: '';
+        position: absolute;
+        width:0;
+        height:3px;
+        background-color: rgb(235, 59, 82);
+        top:79px;
+       left:70px;
+        transition: 0.5s;
+    }
+    .header ul a:hover::after{
+        width:100%;
+       left:-5px;
+    }
+.frm{
+  background-color: #1a1a1a;
+
+  
+   
+    width:60%;
+    height:900px;
+    margin: auto;
+    position: relative;
+ top:60px;
+}
+.tb1{
+    width: 90%;
+ margin: auto ;
+}
+.tb1 input,.tb1 textarea{
+    height:30px;
+   margin-top: 60px;
+   padding-left: 10px;
+    width:90%;
+    border:0;
+    border-bottom: 2px solid rgba(73, 72, 71, 0.9);
+    outline: 0;
+    font-size: 20px;
+    background-color: #1a1a1a;
+}
+
+.tb1 textarea{
+    width:190%;
+}
+.frm1 h3{
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding:50px 0px 0px 60px;
+    color:rgba(250, 242, 242, 0.938);
+}
+.frm2{
+    margin-top:50px;
+    width: 100%;
+    padding-left: 50px;
+    
+}
+.chkbx{
+    width:20px;
+    height:20px;
+  position: relative;
+  top:23px;
+opacity:0;
+}
+.chkbx:selection{
+    background: rgb(235, 59, 82);
+}
+.chkeck{
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+    border: 1px solid white;
+   border-radius: 2px;
+}
+.chkbx:checked ~ .chkeck{
+    background-color: rgb(235, 59, 82);
+    border: 1px solid #1a1a1a;
+}
+.frm2 label{
+    position: relative;
+    left:30px;
+    top:-20px;
+    font-size: 20px;
+    font-family: sans-serif;
+    color:white;
+}
+.tp{
+    font-size:20px;
+    font-family: sans-serif;
+    color: white;
+padding: 50px 0px 20px 50px;
+}
+.btns{
+    width: 180px;
+    height:40px;
+    border-radius: 8px;
+    background-color: rgb(235, 59, 82);
+    margin: 15px 0px 0px 45px;
+    border:0;
+  text-align: center;
+  color: #080808;
+  font-weight: 500;
+  font-size: 17px;
+  font-family: sans-serif;
+  transition: 0.8s ease all;
+}
+.btns:hover{
+    background-color: transparent;
+    border:2px solid rgb(235, 59, 82);
+    color:rgb(235, 59, 82);
+}
+.end{
+    color:white;
+    margin-top: 20px;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    display: flex;
+    width: 80%;
+    padding-left: 50px;
+    padding-top: 30px;
+    letter-spacing: 2px;
+    justify-content: space-between;
+}

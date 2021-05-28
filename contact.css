@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Libre Baskerville', serif;
+    
+   
+}
+html{
+    width:100%;
+}
+body{
+    height:1369px;
+    background-color: whitesmoke;
+}
+:root{          /*variables for colors*/
+    --color:#141414;
+    --take:rgb(235, 59, 82);
+}
+header{
+    background-color: var(--color);
+    color: white;
+   display: flex;
+  
+   justify-content: space-between;
+   padding: 15px 15px 15px 30px;
+    
+}
+header>a>i{
+font-size: 30px;
+padding:0px 20px;
+cursor: pointer;
+color: white;
+
+
+}
+
+
+.section1{
+    display: grid;
+grid-template-areas: 'lefto mapa';
+padding:80px;
+height: 80vh;
+
+}
+.left{
+    grid-area: lefto;
+    width:700px;
+   background-color: var(--take);
+    color:white;
+}
+.map{
+    grid-area: mapa;
+    overflow: hidden;
+}
+.left>p{
+ text-align: left;
+ padding: 50px;
+ line-height: 2.3rem;
+}
+.left i{
+    
+   text-align: center;
+    background-color: white;
+    color:var(--take);
+   width: 1rem;
+   padding: 0.4rem;
+    font-size: 1.1rem;
+    margin:5px;
+    cursor: pointer;
+}
+.left>div>i{
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+.left>div>i:hover{
+   padding: 0.7rem;
+   margin:0px;
+}
+.low>span>i{
+    transition: all 0.2s ease-in ;
+    cursor: pointer;
+}
+.low>span>i:hover{
+    background-color:var(--take);
+    color: black;
+}
+.left>div{
+    position: relative;
+    left:3rem;
+}
+.left>div>span{
+    padding-left: 20px;
+  
+}
+.left>div{
+    padding-bottom: 20px;
+}
+
+.low{
+    position: relative;
+    top:4rem;
+    transform: translateX(-1rem);
+}
+body>a>div{
+    width: 3.5rem;
+    transition: all 0.4s ease-in;
+    background-color: rgba(253, 250, 250);
+    padding: 1rem;
+    position: relative;
+    top:13rem;
+    left:75rem;
+}
+body>a{
+    text-decoration: none;
+    font-size: 1rem;
+    color:var(--color);
+}
+.sat{
+   transform: translate(5.5rem,-3.2rem);
+   border-left: 2px  solid var(--color);
+   width: 6.5rem;
+   transition: all 0.4s ease-in;
+   
+}
+body>a>div:hover{
+    background-color: rgba(253, 250, 250,0.6);
+    clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+}
+.sat:hover{
+    clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+}
+.section2{
+    width:46rem;
+    height:28rem;
+    background-color: rgb(235, 232, 232);
+    box-shadow: 0 0px 12px grey;
+    position: relative;
+    left:25rem;
+    top:-38.5rem;
+}
+
+
+
+.sub{
+    color:white;
+background-color: var(--take);
+    width:10rem;
+    padding: 0.5rem;
+    transform: translateX(12rem);
+    outline: none;
+    transition: all 0.4s ease-in;
+   border-radius: 4px;
+   border: 0;
+}
+.sub:hover{
+border-radius: 4px;
+border: 2px solid  var(--take);
+background-color: white;
+color: var(--take);
+
+}
+.section3{
+    background-color: var(--color);
+    padding:10rem;
+    color: white;
+    position: relative;
+    top:14rem;
+}
+.section3{
+    text-align: center;
+   
+}
+.section3 h1{
+   position: relative;
+   top:1rem;
+}
+.section3 p{
+position: relative;
+top:4rem;
+font-size: 1.4rem;
+}
+.section3 input{
+    position: relative;
+    top:6rem;
+    width:10rem;
+    height:2rem;
+    border-radius: 6px;
+    outline: none;
+    border: 0;
+    transition: all 0.4s ease-in;
+}
+.section3 input:hover{
+    background-color:  var(--take);
+    color: white;
+}
+ .contactform{
+    width: 89%;
+    height:380px;
+    padding: 40px;
+    background: #fff;
+}
+.contactform h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.contactform .inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactform .inputbox input{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #333;
+}
+.contactform .inputbox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #333;
+    resize: none;
+}
+.contactform .inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: all .5s ease;
+    color: #666;
+}
+.contactform .inputbox input:focus ~ span,
+.contactform .inputbox input:valid ~ span,
+.contactform .inputbox textarea:focus ~ span,
+.contactform .inputbox textarea:valid ~ span
+{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactform .inputbox input[type="submit"]{
+    width: 100px;
+    background: var(--take);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    color:white;
+}

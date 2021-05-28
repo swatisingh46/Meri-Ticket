@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Meri Ticket-BookNow</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  
+  <script>
+function myFunction() {
+  alert("Booking confirmed!");
+}
+</script>
+  <style>
+ body{
+ 	background-image: url(interior-theatre-theater-empty-theater.jpg);
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ }
+ 
+ h1{
+ 	cursor: pointer;
+ 	color: #f9dd4a;
+ 	font-family: cursive;
+ 	font-size: 21px;
+ }
+ .box{
+ 	   opacity: 0.7;
+ 	   margin-left: 490px;
+       background-color: #d1cccc;
+            border-radius: 10px;
+            border-color: black;
+        width:390px;
+        height:420px;
+        padding-top:50px;
+        padding-bottom:79px;
+        padding-left:38px;
+        padding-right:34px;
+        
+        box-sizing:border-box;
+       
+       
+        
+      }
+      .box select{
+        border-radius: 7px;
+        font-weight: bold;
+        
+      }
+      .box input{
+        cursor: pointer;
+        border-radius: 7px;
+        margin-left: 87px;
+        font-weight: bold;
+        background-color: black;
+      	font-size: 23px;
+
+      }
+      
+      #cnma{
+        font-size: 22px;
+      }
+      #submit{
+        font-size: 23px;
+        padding-left: 10px;
+        padding-right: 10px
+
+      }
+      
+      
+      .bn{
+        cursor: pointer;
+      }
+      .navbar{
+       border-radius: 15px;  
+         background-color: black;
+         margin: 0 auto;
+         box-shadow: 0 5px 15px #a7a4a2;
+         
+      }
+      .navbar li{
+        float:left;
+        list-style: none;
+        margin: 13px 20px;
+        
+        
+      }
+      
+      .navbar li a{
+        padding: 10px 7px;
+            text-decoration: none;
+            color: white;
+            text-align: center;
+      }
+      .navbar li a:hover{
+        background-color: grey;
+        border-radius: 10px;
+            cursor:pointer;
+      }
+      .navbar input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+  background-color: white;
+}
+#cont{
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 0px;
+  }
+</style>
+</head>
+<body>
+	<nav class="navbar">
+            
+                <li><img src="Blue_S_Monogram_Tech_Logo__2_-removebg-preview (2) (2).png" height="50px" width="80px"></li>
+                <ul>
+                    
+                    <div id="cont">
+                    <li><a href="Home.html" target="_blank" class="a"><strong>Home</strong></a></li>
+                    <li><a href="about.html" target="_blank" class="a"><strong>About Us</strong></a></li>
+                    <li><a href="contact.html" target="_blank" class="a"><strong>Contact Us</strong></a></li></div>
+                    <input type="text" placeholder="Search..">
+                </ul>
+            </nav>
+        <br><br>
+<marquee scrollamount=15 onmouseover="this.stop()" onmouseout="this.start()"><h1><strong>You can also use our app "MeriTicket"</strong></h1></marquee><br><br>
+ <div class="box">
+        
+        <label for="cemina" style="font-size: 23px; color: red">Cinemas:</label><br>
+        <select name="cnma" id="cnma">
+        <option value="1">Cinepolis:P&M Mall,Patna</option>
+        <option value="2">Full Cinemas:Regent Theatre</option>
+        <option value="3">Daily cinemas</option>
+        </select><br><br>
+        <label for="cemina" style="font-size: 23px; color: red">Movie:</label><br>
+          <select name="cnma" id="cnma">
+            <option value="1">Godzilla-vs-Kong</option>
+            <option value="2">Venom</option>
+            <option value="3">Hera pheri</option>
+            <option value="4">Sholay</option>
+            <option value="5">Jokar</option>
+            <option value="6">Scam1992</option>
+          </select>
+          <br><br>
+        <label for="time" style="font-size: 23px; color: red">Timing:</label><br>
+          <select name="tme" id="cnma">
+            <option value="morning">Morning:9am-12pm</option>
+            <option value="afternoon">Afternoon:3pm-6pm</option>
+            <option value="evening">Evening:6pm-12am</option>
+          </select><br><br><br>
+        <input onclick="myFunction()"type="submit" style="color: white;" value="Book Show">
+    </div>
+
+
+
+</body>
+</html>

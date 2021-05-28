@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+    background: rgb(187,187,245);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    width: 350px;
+    height: 500px;
+    box-shadow: 0 0 40px 20px rgba(0,0,0,0.26);
+    perspective: 1000px;
+}
+.inner-box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+.card-front, .card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgb(235, 59, 82,0.7),rgb(235, 59, 82,0.7)), url(https://th.bing.com/th/id/OIP.hTqVjZ27HD5yPcO1lN9u1AHaHa?w=184&h=184&c=7&o=5&dpr=1.25&pid=1.7);
+    padding: 55px;
+    box-sizing: border-box;
+    backface-visibility:hidden;
+}
+.card-back{
+    transform: rotateY(180deg);
+}
+.card h2{
+    font-weight: normal;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.input-box{
+    width: 100%;
+    background: transparent;
+    border: 1px solid #fff;
+    margin: 6px 0;
+    height: 32px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: none;
+    text-align: center;
+    color: #fff;
+}
+::placeholder{
+    color: #fff;
+    font-size: 12px;
+}
+button{
+    width: 100%;
+    background: transparent;
+    border: 1px solid #fff;
+    margin: 35px 0 10px;
+    height: 32px;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+    font-size: 12px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: none;
+    cursor: pointer;
+}
+.btn-submit{
+    position: relative;
+}
+.btn-submit::after{
+    content: '\27a4';
+    color: #333;
+    line-height: 32px;
+    height: 32px;
+    font-size: 17px;
+    width: 32px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+}
+span{
+    font-size: 13px;
+    margin-left: 10px;
+}
+.btn{
+    margin-top: 70px;
+}
+.card a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 8px;
+}

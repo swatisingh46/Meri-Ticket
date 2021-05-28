@@ -1,0 +1,292 @@
+/* Basic Stylings */
+
+:root{
+    --primary: #3DCFD3;
+    --dark: #161616;
+    --pure: #fff;
+    --ternary: #898989;
+    --light: #F2F2F2;
+    --secondary: #070606;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:   url(https://cdn.hipwallpaper.com/i/5/16/p7SkBA.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+    min-height: 100vh;
+}
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+   
+    background: rgb(242, 243, 236);
+    border-left: 0;
+    border-right: 0;
+}
+::-webkit-scrollbar-thumb{
+    background:   rgb(235, 59, 82);
+    height: 25%;
+    transition: 0.8s ease;
+    cursor: pointer;
+}
+/* utils */
+.flex{
+    display: flex;
+}
+.flex-1{
+    flex: 1;
+}
+.item-center{
+    align-items: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-center{
+    justify-content: center;
+}
+.btn{
+    padding: 0.8rem 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+.btn-primary{
+    background: var(--primary);
+    color: var(--dark);
+}
+.btn-primary:hover{
+    background: transparent;
+    border-color: var(--primary);
+    color: var(--primary);
+}
+.btn-secondary{
+    background: transparent;
+    color: var(--primary);
+    border-color: var(--primary);
+}
+.btn-secondary:hover{
+    background: var(--primary);
+    color: var(--pure);
+}
+
+
+
+/* Navigation */
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 100000;
+    background: rgb(19, 18, 18);
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.17);
+}
+header .logo{
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    margin-left: 20px;
+}
+header .logo img{
+    width: 100%;
+    height: 100%;
+}
+.nav{
+  display:flex;
+  list-style: none;
+  justify-content: space-between;
+}
+.nav li{
+    padding: 15px 35px;
+    font-size: 25px;
+  
+}
+.nav li a{
+    text-decoration: none;
+    color: rgb(235, 59, 82);
+    position: relative;
+}
+.nav li a::after{
+    content: '';
+    position: absolute;
+    width:0;
+    height:3px;
+    background-color: rgb(235, 59, 82);
+    top:42px;
+   left:40px;
+    transition: 0.5s;
+}
+.nav li a:hover::after{
+    width: 130%;
+    left: -12px;
+}
+/* About */
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    background-color:rgb(32, 31, 31,0.5);
+  }
+  
+  
+  .card {
+    box-shadow: 0 4px 8px rgba(248, 238, 238, 0.2);
+    margin:10px;
+position: relative;
+background-color:rgb(29,28,28,0.7);
+
+
+  }
+  .card:hover > .c:after,  .card:hover > .c1:after,  .card:hover > .c2:after{
+opacity: 0.9;
+  }
+  .about-section {
+    font-family: 'Lora', serif;
+  
+    padding:30px 30px 80px 30px;
+    font-size: 25px;
+    text-align: center;
+    line-height: 2;
+    background-color: rgb(49, 48, 48,0.9);
+  
+    color: white;
+  }
+  
+.about-section h1{
+    font-size: 40px;
+    color: rgb(235, 59, 82);
+    padding-bottom: 30px;
+    font-family: sans-serif;
+    padding-top: 50px;
+}
+
+.c1:after,.c2:after,.c:after{
+    content:'Muskan Thapa \A 12006245 \A RK20TSB43 \A We are here to serve you';/*\A is used to give line break*/
+    padding: 50px 0 0 0;
+    font-size: 30px;
+    font-style:italic;
+    font-family: cursive;
+    text-align: center;
+    white-space: pre;/*to use \A in content*/
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 70%;
+    opacity: 0;
+    background-image: linear-gradient(rgb(235, 59, 82),white);
+transition: 0.6s;  
+}
+.c2:after{
+    content:'Swati \A 12006405 \A RK20TSB42 \A We are here to serve you';
+}
+.c1:after{
+    content:'Eeshan Aggarwal \A 12006223 \A RK20TSB44 \A We are here to serve you';
+}
+   .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+ 
+.img1{
+    border-radius: 50px 0 50px 0;
+    width:70%;
+    position: relative;
+    left:20px;
+margin: 50px 50px;
+height: 300px;
+}
+/* Footer */
+footer{
+    background: #111;
+    height: auto;
+    width: 100%;
+    font-family: sans-serif;
+    padding-top: 40px;
+    color: #fff;
+}
+footer .footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+footer .footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+    letter-spacing: 2px;
+    color:   rgb(235, 59, 82)
+    ;
+}
+footer .footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 24px;
+}
+footer .footer-content .solink{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: c;
+    margin: 1rem 0 3rem 0;
+}
+footer .footer-content .solink li{
+    margin: 0 10px;
+}
+footer .footer-content .solink a{
+    text-decoration: none;
+    color: #fff;
+    transition:  all .5s ease;
+}
+footer .footer-content .solink a i{
+    font-size: 1.2rem;
+}
+footer .footer-content .solink a:hover i{
+    color:   rgb(235, 59, 82)
+    ;
+}
+footer .footer-bottom{
+    background: #000;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}

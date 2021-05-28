@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link  rel="icon" href="Blue_S_Monogram_Tech_Logo__2_-removebg-preview (2) (2).png" >    
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+   
+    <div class="head">
+        
+        <div class="menu">
+        
+                <form>
+                    <input type="text" name="txtmovie"  id="txt1" placeholder="Search for movies or theatres...">
+                    <input type="button" value="Search" id="btn1">
+                   </form>
+        <nav class="header">
+           <ul>
+               <li>
+                   <a href="Home.html">Home</a>
+               </li>
+               <li>
+                  <a href="contact.html" target="_blank"> Contact Us</a>
+               </li>
+               <li>
+                  <a href="about.html"> About</a>
+               </li>
+           </ul>
+        </nav>
+        </div>
+        <div>
+            
+        </div>
+   <img src="Blue_S_Monogram_Tech_Logo__2_-removebg-preview (2) (2).png" alt="logo"/>
+       
+    </div>
+    <section class="frm">
+<form  class="frm1">
+    <h3>
+        FEEDBACK
+    </h3>
+    <br><br><br>
+<table class="tb1">
+    <tr>
+        <td><input type="text" id="txtname"  placeholder="NAME" required></td>
+        <td><input type="number" id="txtmobile" placeholder="MOBILE" required></td>
+    </tr>
+    <tr>
+        <td><input type="email" id="txtemail" placeholder="EMAIL" required></td>
+        <td>  </td>
+    </tr>
+    <tr>
+        <td>
+            <textarea id="txtarea" placeholder="MESSAGE">
+
+            </textarea>
+        </td>
+    </tr>
+</table>
+<p class="tp">Type:</p>
+<table class=frm2>
+    <tr>
+        <td>
+           <input type="checkbox" name="que" id="chk1" class="chkbx">
+           <div class="chkeck"></div> <label for="chk1">Complaints</label></td>
+         
+            <td>  
+                <input type="checkbox" name="que" id="chk2" class="chkbx">
+                <div class="chkeck"></div><label for="chk2">Suggestions</label>  
+            </td>
+            <td>  
+                <input type="checkbox" name="que" id="chk3" class="chkbx">
+                <div class="chkeck"></div>  <label for="chk3">Compliments</label>  
+            </td>
+    </tr>
+    <tr>
+        <td>
+           <input type="checkbox" name="que" id="chk4" class="chkbx">
+           <div class="chkeck"></div>  <label for="chk4">Enquiry</label></td>
+            <td>   
+                <input type="checkbox" name="que" id="chk5" class="chkbx">
+                <div class="chkeck"></div>  <label for="chk5">Others</label>  
+            </td>
+            <td>   
+                <input type="checkbox" name="que" id="chk6" checked class="chkbx">
+                <div class="chkeck"></div> <label for="chk6">Copy to self</label>  
+            </td>
+    </tr>
+</table>
+<input type="button" value="SEND REQUEST" class="btns" onclick="call()">
+</form>
+<div class="end">
+    <span>Ph: +9100000000</span>
+    <span>e-mail: doityes@gmailcom</span>
+</div>
+    </section>
+    <script>
+        function call(){
+            var val1=document.getElementById('txtname').value;
+            var val2=document.getElementById('txtmobile').value;
+            var val3=document.getElementById('txtemail').value;
+            var val4=document.getElementById('txtarea').value;
+
+            if(val1=='' || val2==' ' || val3=='' || val4=='')
+            {
+            alert("Fill all the fields to submit");
+        }
+            else
+            alert("Your feedback has been submitted");
+        }
+    </script>
+</body>
+</html>
